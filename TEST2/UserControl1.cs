@@ -10,7 +10,6 @@ namespace TEST2
 {
     public partial class UserControl1 : UserControl
     {
-        public string myname;
         public UserControl1()
         {
             InitializeComponent();
@@ -23,7 +22,11 @@ namespace TEST2
 
         private void UserControl1_Load(object sender, EventArgs e)
         {
-            label1.Text = myname;
+            
+        }
+        public void SetLabelTextFromForm1(string myText)
+        {
+            label1.Text = myText;
         }
     }
 }

@@ -19,14 +19,7 @@ namespace TEST2
 
         private void button1_Click(object sender, EventArgs e)
         {
-            using ( UserControl1 sf = new UserControl1())
-            
-            {
-                sf.myname = textBoxName.Text;
-                
-
-
-            }
+            userControl11.SetLabelTextFromForm1(textBoxName.Text);
         }
 
         private void textBoxName_TextChanged(object sender, EventArgs e)
